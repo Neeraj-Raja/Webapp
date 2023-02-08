@@ -11,7 +11,6 @@ Creating a api request using Nodejs and MYSQL2 and checking it in POSTMAN.
 ## Dependencies to be installed 
 
 - npm i 
-- npm install express mysql2 bcrypt body-parser nodemon dotenv
 - start app by npm start
 
 
