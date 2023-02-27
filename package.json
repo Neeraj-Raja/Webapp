@@ -13,7 +13,7 @@
   },
   "scripts": {
     
-    "start": "node app.js",
+    "start": "node app.js > app.log 2>&1",
     "test": "jest"
   }
 }
