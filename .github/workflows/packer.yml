@@ -26,7 +26,13 @@ jobs:
         run: zip -r webapp.zip .
       - name: Install Packer
         run: sudo apt-get update && sudo apt-get install -y packer
+      - name: Build Artifact
+        uses: hashicorp/packer-github-actions@master
+        with:
+          command: build
+          arguments: "-color=false -on-error=abort"
+          target: ./packer/packer.pkr.hcl
       - name: Packer Init
-        run: packer init ${{ github.workspace }}/Webapp/packer/packer.pkr.hcl
+        run: packer init #${{ github.workspace }}/Webapp/packer/packer.pkr.hcl
       - name: Packer Build - Branches
         run: packer build .
