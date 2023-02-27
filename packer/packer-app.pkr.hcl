@@ -97,7 +97,7 @@ build {
     //   "CHECKPOINT_DISABLE=1"
     // ]
 
-    script = "./webapp.sh"
+    script = "./packer/webapp.sh"
     environment_vars = ["DBUSER=${var.DBUSER}", "DBPASS=${var.DBPASS}", "DBHOST=${var.DBHOST}", "PORT=${var.PORT}", "DATABASE=${var.DATABASE}", "DBPORT=${var.DBPORT}"]
 
   }
