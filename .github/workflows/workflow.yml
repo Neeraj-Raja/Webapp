@@ -40,9 +40,10 @@ jobs:
         uses: actions/checkout@v1
       - name: Create zip archive
         run: zip -r webapp.zip .
+        working-directory: ./webapp/packer
       - name: Install Packer
         run: sudo apt-get update && sudo apt-get install -y packer
       - name: Packer Init
-        run: packer init ${{ github.workspace }}/Webapp/packer/packer.pkr.hcl
+        run: packer init #${{ github.workspace }}/Webapp/packer/packer.pkr.hcl
       - name: Packer Validate - Branches
         run: packer validate .
