@@ -43,6 +43,6 @@ jobs:
       - name: Install Packer
         run: sudo apt-get update && sudo apt-get install -y packer
       - name: Packer Init
-        run: packer init Webapp/packer/packer.pkr.hcl
+        run: packer init ${{ github.workspace }}/Webapp/packer/packer.pkr.hcl
       - name: Packer Validate - Branches
         run: packer validate .
