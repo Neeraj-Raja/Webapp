@@ -72,7 +72,7 @@ Step 3: Open Postman to Test the API's
 
 Step 4: Check the Database after each and every API is called to see the status in Database.
 
-Test the api
+Test the api nn
 
 http://localhost:3000/v1/user, where you should see: "200 OK".
 
