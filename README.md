@@ -12,7 +12,7 @@ saa
 ## Dependencies to be installed 
 
 - npm i 
-- start app by npm start
+- start app by npm starnm,nt
 
 
 <h4>Important Commands to run the server and test</h4>
