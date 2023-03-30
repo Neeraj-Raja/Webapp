@@ -9,7 +9,7 @@ MySQL or any other database management system
 Node.js
 AWS account
 
-Terraform
+Terraform..
 
 Steps
 Create a Node.js and MYSQL2 Webapp with RESTful APIs to perform CRUD operations on users and products.
