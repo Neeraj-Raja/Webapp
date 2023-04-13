@@ -24,6 +24,13 @@ app.get('/healthz',function(req, res) {
    
 });
 
+app.get('/health',function(req, res) {
+ // helper.statsdClient.increment('health_counter');
+ //logger.info("/health running fine");
+  res.status(200).send(); 
+   
+});
+
 app.use('/v1/user',userRoutes);
 app.use('/v1/product',productRoutes);
 
