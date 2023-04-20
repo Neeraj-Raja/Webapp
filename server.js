@@ -31,8 +31,8 @@ app.get('/health',function(req, res) {
    
 });
 
-app.use('/v1/user',userRoutes);
-app.use('/v1/product',productRoutes);
+app.use('/v5/user',userRoutes);
+app.use('/v5/product',productRoutes);
 
 app.use(methodOverride())
 app.use((err, req, res, next) => {
